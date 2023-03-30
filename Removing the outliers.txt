@@ -1,0 +1,12 @@
+import pandas as pd
+df = pd.read_csv("Height.csv")
+df.head()
+df['Height']
+df.describe()
+max_threshold = df['Height'].quantile(0.95)
+max_threshold
+df[df('Height')] < min_threshold
+min_threshold = df['Height'].quantile(0.05)
+min_threshold
+df[df('Height')] < min_threshold
+df[(df['Height'] < max_threshold) & (df['Height'] > min_threshold)]
